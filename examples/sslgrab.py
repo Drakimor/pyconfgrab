@@ -24,6 +24,10 @@ for file in files:
 	if os.stat(os.path.join(srch_dir, file)).st_mtime > os.stat(os.path.join(srch_dir, new_file)).st_mtime:
 		new_file = file
 
+for file in files:
+	if file != new_file:
+		os.remove(os.path.join(srch_dir, file))
+
 conf_file=open(os.path.join(srch_dir, new_file))
 out_file=open(host,'w')
 for line in conf_file:
