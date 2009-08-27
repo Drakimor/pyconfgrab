@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# Cyclades config grab
+
 import os,sys,pyrancid
 
 (options, args) = pyrancid.get_opts()

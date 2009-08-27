@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-import os,sys,pyrancid
+# Netscreen config grab
+
+import os,sys,pyconfgrab
 
 (options, args) = pyrancid.get_opts()
 
